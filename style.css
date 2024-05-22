@@ -1,0 +1,57 @@
+body{
+    background-color: #dae9f9;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Lucida Bright", Georgia, serif;
+    font-size: 3em;
+}
+
+p { font-family: "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monospace; 
+    font-size: 1em; 
+    font-style: normal;  
+    font-weight: 400; 
+}
+
+#ansichtkaart{
+    max-width: 23em;
+    margin: 5em;
+    margin-top: 1em;
+    display: block;
+}
+
+#blauw, #groen, #geel, #paars, #roze, #wit, 
+#eifel_toren, #big_ben, #molen, #sydney_opera_house, #toren_van_pisa, #vrijheidsbeeld{
+    max-width: 5em;
+    margin: 1em;
+    margin-top: 0em;
+    margin-right: 5em;
+}
+
+
+#blauw:hover, #groen:hover, #geel:hover, #paars:hover, #roze:hover, #wit:hover, 
+#eifel_toren:hover, #big_ben:hover, #molen:hover, #sydney_opera_house:hover, #toren_van_pisa:hover, #vrijheidsbeeld:hover{
+    transform: scale(1.1);
+}
+
+
+.versieren{
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.plaatjes{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.derde_rij{
+    margin-top: 3em;
+}
