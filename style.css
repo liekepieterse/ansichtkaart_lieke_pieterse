@@ -1,29 +1,40 @@
-body{
+body {
     background-color: #dae9f9;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
     font-family: "Lucida Bright", Georgia, serif;
     font-size: 3em;
 }
 
-p { font-family: "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monospace; 
-    font-size: 1em; 
-    font-style: normal;  
-    font-weight: 400; 
+p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monospace;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
 }
 
-#ansichtkaart{
+#ansichtkaart {
     max-width: 23em;
     margin: 5em;
     margin-top: 1em;
     display: block;
 }
 
-#blauw, #groen, #geel, #paars, #roze, #wit, 
-#eifel_toren, #big_ben, #molen, #sydney_opera_house, #toren_van_pisa, #vrijheidsbeeld{
+#blauw,
+#groen,
+#geel,
+#paars,
+#roze,
+#wit,
+#eifel_toren,
+#big_ben,
+#molen,
+#sydney_opera_house,
+#toren_van_pisa,
+#vrijheidsbeeld {
     max-width: 5em;
     margin: 1em;
     margin-top: 0em;
@@ -31,27 +42,65 @@ p { font-family: "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera San
 }
 
 
-#blauw:hover, #groen:hover, #geel:hover, #paars:hover, #roze:hover, #wit:hover, 
-#eifel_toren:hover, #big_ben:hover, #molen:hover, #sydney_opera_house:hover, #toren_van_pisa:hover, #vrijheidsbeeld:hover{
+#blauw:hover,
+#groen:hover,
+#geel:hover,
+#paars:hover,
+#roze:hover,
+#wit:hover,
+#eifel_toren:hover,
+#big_ben:hover,
+#molen:hover,
+#sydney_opera_house:hover,
+#toren_van_pisa:hover,
+#vrijheidsbeeld:hover {
     transform: scale(1.1);
 }
 
 
-.versieren{
+.versieren {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 
-.plaatjes{
+.plaatjes {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.derde_rij{
+.derde_rij {
     margin-top: 3em;
+}
+
+#grote_vrijheidsbeeld,
+#grote_toren_van_pisa,
+#grote_molen,
+#grote_eifel_toren,
+#grote_big_ben {
+    max-height: 25em;
+}
+
+#grote_opera_house {
+    max-width: 20em;
+}
+
+#imageStack {
+    position: relative;
+}
+
+#imageStack img {
+    position: absolute;
+    margin-left: -60em;
+    margin-top: -28em;
+    display: none;
+    z-index: 1;
+}
+
+.show {
+    display: block;
 }
