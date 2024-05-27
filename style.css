@@ -81,13 +81,11 @@ p {
 #grote_toren_van_pisa,
 #grote_molen,
 #grote_eifel_toren,
-#grote_big_ben {
-    max-height: 25em;
+#grote_big_ben, 
+#grote_opera_house{
+    max-width: 23em;
 }
 
-#grote_opera_house {
-    max-width: 20em;
-}
 
 #imageStack {
     position: relative;
@@ -95,12 +93,49 @@ p {
 
 #imageStack img {
     position: absolute;
-    margin-left: -60em;
-    margin-top: -28em;
+    margin-left: -61.5em;
+    margin-top: -32.5em;
     display: none;
     z-index: 1;
 }
 
+
 .show {
-    display: block;
+    display: block !important;
+}
+
+.knop{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+    margin-top: -8.5em;
+}
+
+#klaar_knop{
+    padding: 1em 2em;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-family: "Lucida Bright", Georgia, serif;
+    border-radius: 5em;
+}
+
+#klaar_knop:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+}
+
+.knop_tekst{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#goed_gedaan{
+    margin-top: -11.5em;
+    font-size: 3em;
+    font-family: "Lucida Bright", Georgia, serif;
+    background-color: #dae9f9;
+    padding: 0.5;
 }
