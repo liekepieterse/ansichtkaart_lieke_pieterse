@@ -1,5 +1,6 @@
 body {
     background-color: #dae9f9;
+    color: #26081E;
 }
 
 h1 {
@@ -9,11 +10,13 @@ h1 {
     font-size: 3em;
 }
 
-p {
+p,
+#input_veld {
     font-family: "Lucida Console", "Lucida Sans Typewriter", "Bitstream Vera Sans Mono", monospace;
     font-size: 1em;
     font-style: normal;
     font-weight: 400;
+    color: #26081E;
 }
 
 #ansichtkaart {
@@ -81,8 +84,8 @@ p {
 #grote_toren_van_pisa,
 #grote_molen,
 #grote_eifel_toren,
-#grote_big_ben, 
-#grote_opera_house{
+#grote_big_ben,
+#grote_opera_house {
     max-width: 23em;
 }
 
@@ -104,14 +107,14 @@ p {
     display: block !important;
 }
 
-.knop{
+.knop {
     display: flex;
     justify-content: flex-end;
     margin-right: 3em;
     margin-top: -8.5em;
 }
 
-#klaar_knop{
+#klaar_knop {
     padding: 1em 2em;
     font-size: 1.5em;
     cursor: pointer;
@@ -119,36 +122,82 @@ p {
     border: none;
     font-family: "Lucida Bright", Georgia, serif;
     border-radius: 5em;
+    color: #26081E;
 }
 
-#klaar_knop:hover{
+#klaar_knop:hover {
     transform: scale(1.1);
     background-color: #F2F2F2;
 }
 
-.knop_tekst{
+.knop_tekst {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-#goed_gedaan{
+#goed_gedaan_tekst {
     margin-top: -11.5em;
     font-size: 3em;
     font-family: "Lucida Bright", Georgia, serif;
     background-color: #dae9f9;
     padding: 0.5;
+    color: #26081E;
 }
 
-#input_veld{
+#goed_gedaan_img {
+    display: none;
+}
+
+#goed_gedaan_img {
+    position: absolute;
+    max-width: 45em;
+    margin-top: -34em;
+    margin-right: -2em;
+}
+
+#input_veld {
     display: flex;
     justify-content: flex-end;
-   margin-right: -25em;
-   margin-top: -10em;
-   flex-direction: column;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: -25em;
+    margin-top: -14.5em;
+    flex-direction: column;
 }
 
-#submit{
+#submit {
     max-width: fit-content;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-family: "Lucida Bright", Georgia, serif;
+    border-radius: 5em;
+    margin-top: 1em;
+    color: #26081E;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+}
+
+#tekst {
+    border: none;
+    height: 2em;
+}
+
+.kaartje{
+    position: relative;
+}
+
+#kaart_tekst{
+    position: absolute;
+    top: 1%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 3em;
+    font-family: "Lucida Bright", Georgia, serif;
+    color: #26081E;
 }

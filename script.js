@@ -28,7 +28,8 @@ let vrijheidsbeeld = document.querySelector("#vrijheidsbeeld");
 let grotevrijheidsbeeld = document.querySelector("#grote_vrijheidsbeeld");
 
 let klaarKnop = document.querySelector("#klaar_knop");
-let goedGedaan = document.querySelector("#goed_gedaan");
+let goedGedaan = document.querySelector("#goed_gedaan_tekst");
+let goedGedaanImg = document.querySelector("#goed_gedaan_img");
 
 function wordtBlauw() {
   ansichtkaart.src = "image/ansichtkaart_blauw.png";
@@ -100,11 +101,25 @@ klaarKnop.addEventListener("click", () => {
     grotevrijheidsbeeld.classList.contains("show")
   ) {
     goedGedaan.textContent = "Super leuk!";
+    goedGedaanImg.classList.add("show");
   } else {
     goedGedaan.textContent = "Kies eerst een illustratie";
   }
 
   setTimeout(() => {
     goedGedaan.textContent = "";
+    goedGedaanImg.classList.remove("show");
   }, 2000);
+});
+
+//bron:chatGPT, prompt:hoe kan ik vanuit een formulier de tekst weergeven op het ansicht kaartje
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#input_veld");
+  const inputTekst = document.querySelector("#tekst");
+  const kaartTekst = document.querySelector("#kaart_tekst");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    kaartTekst.textContent = inputTekst.value.trim();
+  });
 });
